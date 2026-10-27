@@ -1,0 +1,25 @@
+{
+  "model_source": "/home/shahariar/Desktop/unknown_density_multiseed_validation_bundle/adaptive_multirobot_networked_coverage_revised.py",
+  "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "num_seeds": 10,
+  "grid_size": 50,
+  "num_robots": 5,
+  "time_steps": 200,
+  "target_sigma": 8.0,
+  "estimator_bandwidth": 3.0,
+  "estimator_memory": 0.85,
+  "estimator_prior_weight": 0.15,
+  "elapsed_seconds": 24.038,
+  "metric_note": "Density maps are normalized to sum to one. MAE/RMSE are per-cell probability mass errors. JS divergence uses natural logarithms. Estimate at t+1 includes observations from t and is compared with the hidden true map at t."
+}

@@ -1,0 +1,13 @@
+comparison,metric,n_paired_seeds,mean_difference,ci95_low,ci95_high,difference_std
+A0_full_method_minus_A1_density_gradient,mean_detection,30,-0.0015689062235063667,-0.004977735505016989,0.0018399230580042549,0.009129012477154147
+A0_full_method_minus_A1_density_gradient,final_20_step_detection,30,0.0016267990240889595,-0.0039018034907485418,0.007155401538926461,0.01480586945580662
+A0_full_method_minus_A1_density_gradient,cumulative_travel,30,-936.9975613511555,-938.1687405321898,-935.8263821701212,3.1364754505708192
+A0_full_method_minus_A2_no_backtracking,mean_detection,30,0.0,0.0,0.0,0.0
+A0_full_method_minus_A2_no_backtracking,final_20_step_detection,30,0.0,0.0,0.0,0.0
+A0_full_method_minus_A2_no_backtracking,cumulative_travel,30,0.0,0.0,0.0,0.0
+A0_full_method_minus_A3_no_temporal_smoothing,mean_detection,30,-0.043703038784915174,-0.0446537997723785,-0.042752277797451846,0.002546184687048282
+A0_full_method_minus_A3_no_temporal_smoothing,final_20_step_detection,30,-0.0261289298480774,-0.028443928336831955,-0.023813931359322842,0.0061996798147274665
+A0_full_method_minus_A3_no_temporal_smoothing,cumulative_travel,30,-78.54463546854907,-79.3581067011595,-77.73116423593865,2.178515971036144
+A0_full_method_minus_A4_fixed_step_scaling,mean_detection,30,-0.15254012659132854,-0.1543294608712972,-0.15075079231135988,0.004791925209113081
+A0_full_method_minus_A4_fixed_step_scaling,final_20_step_detection,30,-0.19845909721310184,-0.20158202006868467,-0.19533617435751902,0.008363341006379631
+A0_full_method_minus_A4_fixed_step_scaling,cumulative_travel,30,-818.5997748928221,-821.081470808265,-816.1180789773792,6.646103722314026

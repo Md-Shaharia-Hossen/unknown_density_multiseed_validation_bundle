@@ -1,0 +1,5 @@
+method,time_averaged_detection_score_mean,time_averaged_detection_score_std,time_averaged_detection_score_n
+Density gradient,0.24698388607689795,0.025706517561187362,10
+Detection-objective gradient,0.2788204981065598,0.002322478374855436,10
+Greedy (static),0.21423745771163247,2.925694557147251e-17,10
+Random (static),0.13919385661403205,0.05710692842828898,10

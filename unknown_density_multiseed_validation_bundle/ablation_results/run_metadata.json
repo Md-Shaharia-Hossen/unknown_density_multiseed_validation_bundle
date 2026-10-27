@@ -1,0 +1,88 @@
+{
+  "seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129
+  ],
+  "number_of_seeds": 30,
+  "number_of_robots": 5,
+  "number_of_steps": 200,
+  "grid_size": 50,
+  "sensor_sigma": 4.0,
+  "target_sigma": 8.0,
+  "targets_per_step_expected": 100,
+  "estimator_bandwidth": 3.0,
+  "estimator_prior_weight": 0.15,
+  "objective_step_gain": 25.0,
+  "configurations": [
+    {
+      "name": "A0_full_method",
+      "controller": "detection_objective",
+      "use_backtracking": true,
+      "estimator_memory": 0.85,
+      "adaptive_step_scaling": true
+    },
+    {
+      "name": "A1_density_gradient",
+      "controller": "density_gradient",
+      "use_backtracking": false,
+      "estimator_memory": 0.85,
+      "adaptive_step_scaling": false
+    },
+    {
+      "name": "A2_no_backtracking",
+      "controller": "detection_objective",
+      "use_backtracking": false,
+      "estimator_memory": 0.85,
+      "adaptive_step_scaling": true
+    },
+    {
+      "name": "A3_no_temporal_smoothing",
+      "controller": "detection_objective",
+      "use_backtracking": true,
+      "estimator_memory": 0.0,
+      "adaptive_step_scaling": true
+    },
+    {
+      "name": "A4_fixed_step_scaling",
+      "controller": "detection_objective",
+      "use_backtracking": true,
+      "estimator_memory": 0.85,
+      "adaptive_step_scaling": false
+    }
+  ],
+  "notes": [
+    "The hidden true density is used only for observations and evaluation.",
+    "Each variant has its own observations and density estimator.",
+    "Results are aggregated across independent seeds, not time steps.",
+    "The baseline A1 is a controller comparison, not a single-component ablation.",
+    "Same seed IDs do not guarantee identical observation samples across policies."
+  ]
+}
